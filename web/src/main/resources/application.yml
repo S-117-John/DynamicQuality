@@ -1,0 +1,46 @@
+system:
+  title: a
+server:
+  port: 9999
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+spring:
+  datasource:
+    jdbc-url: jdbc:mysql://127.0.0.1:3306/zebone?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+#    jdbc-url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    username: nhis
+#    password: 123456
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  second-datasource:
+#    orcl
+#    url: jdbc:oracle:thin:@127.0.0.1:1521/orcl
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    username: nhis
+#    password: nhis
+#    sqlserver
+#    jdbc-url: jdbc:sqlserver://192.168.1.36:1433;DatabaseName=nhis_test
+#    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+#    username: sa
+#    password: 123456
+#    mysql
+#    jdbc-url: jdbc:mysql://127.0.0.1:3306/zb?useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username: root
+#    password: 123456
+
+
+HASOR_DATAQL_DATAWAY: true
+HASOR_DATAQL_DATAWAY_ADMIN: true
+HASOR_DATAQL_DATAWAY_API_URL: /api/
+HASOR_DATAQL_DATAWAY_UI_URL: /interface-ui/
+
